@@ -1,15 +1,18 @@
-## Prompts for categorizing all textual descriptions in the dataset
+## Prompts for categorizing textual descriptions
 
-These are the prompts to obtain the statistics in Fig. 8. 
-
-First, we need to upload the entire descriptions in the dataset to the ChatGPT-o3 web interface as a file and ask it to summarize a set of categories that cover the entire dataset. Then, we ask ChatGPT to attribute each description sentence to this set of categorization labels. The first step for obtaining the label set is prompted as follows. Depending on the quality of the output, it may require further checking and re-prompting.
+These are the prompts we used to obtain the catergorization statistics in Fig. 8 using ChatGPT-o3. First, we need to upload the entire descriptions in the dataset to the ChatGPT-o3 web interface as a file and ask it to summarize a set of category labels that cover the entire dataset. Then, we ask ChatGPT to attribute each description sentence to this set of labels.   
+The first step for obtaining the label set is prompted as follows. Depending on the quality of the output, it may require further checking and re-prompting.
 
 ```text
-You are a video authenticity assessment expert. This is a video evaluation csv document where each line contains an assessment statement of a video from a human annotator (the "descriptions_en" column). You are now required to extract main catergorizations in three aspects: artifact location, artifact type, and severity of artifact. These catergorizations may include the following:
+You are a video authenticity assessment expert. This is a video evaluation csv document where each line contains an assessment statement of a
+video from a human annotator (the "descriptions_en" column). You are now required to extract main catergorizations in three aspects: artifact
+location, artifact type, and severity of artifact. These catergorizations may include the following:
 Artifact locations (place): face, nose, eyes, eye-brows, mouth, teeth, contour, forehead, not-specified.
 Artifact types (artifact): blur/out-of-focus, jitter/flickering, no apparent manipulation, color/contrast anomaly, expression abnormality/stiffness, ghosting artifact, seam artifact, distortion, asymmetry, lighting/shading anomaly, other.
 Artifact Severity (extent): no-artifact, mild, moderate, sevear.
-Please first analyze the entire file and evaluate whether the current categorization of location, artifact type, and severity is comprehensive and sufficient to cover the entire cases in the file. You may add new categories to either location or artifact type to improve coverage. Please indicate which new categories you have added and explain their necessity.
+Please first analyze the entire file and evaluate whether the current categorization of location, artifact type, and severity is comprehensive and
+sufficient to cover the entire cases in the file. You may add new categories to either location or artifact type to improve coverage. Please
+indicate which new categories you have added and explain their necessity.
 ```
 
 Then we add the newly discovered categories to the set, and the second step for attributing each sentence is as follows.
@@ -100,4 +103,5 @@ D) CSV OUTPUT REQUIREMENTS (STRICT)
 ```
 
 Finally, we run a simple python script to sum the total appearance of each category over the entire dataset based on the above attribution output.
+
 
