@@ -5,14 +5,16 @@ The first step for obtaining the label set is prompted as follows. Depending on 
 
 ```text
 You are a video authenticity assessment expert. This is a video evaluation csv document where each line
-contains an assessment statement of a video from a human annotator (the "descriptions_en" column).
+contains an assessment statement of a video from a human annotator (in the "descriptions_en" column).
 You are now required to extract main catergorizations in three aspects: artifact location,
-artifact type, and severity of artifact. These catergorizations may include the following:
+artifact type, and severity of artifact. These catergorizations may include the following:  
+
 Artifact locations (place): face, nose, eyes, eye-brows, mouth, teeth, contour, forehead, not-specified.
 Artifact types (artifact): blur/out-of-focus, jitter/flickering, no apparent manipulation,
 color/contrast anomaly, expression abnormality/stiffness, ghosting artifact, seam artifact,
 distortion, asymmetry, lighting/shading anomaly, other.
 Artifact Severity (extent): no-artifact, mild, moderate, sevear.
+
 Please first analyze the entire file and evaluate whether the current categorization of location,
 artifact type, and severity is comprehensive and sufficient to cover the entire cases in the file.
 You may add new categories to either location or artifact type to improve coverage. Please
