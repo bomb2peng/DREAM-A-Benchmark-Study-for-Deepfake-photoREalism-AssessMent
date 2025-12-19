@@ -1,5 +1,5 @@
 ## The DREAM deepfake assessment dataset 
-The dataset can be applied here. It is available for research purposes only.
+The dataset can be applied [here](https://docs.google.com/forms/d/e/1FAIpQLSc7GdEJAhCkqLkl_wydfSdywSh_EL0cb27Uct7aJMyM-Y3oyw/viewform?usp=dialog). It is available for research purposes only, and please input your institutional email address to recieve the dataset link.
 
 ## The prompts for obtaining catergorization of description sentences
 We employed ChatGPT-o3, a powerful OpenAI large model for reasoning, to analyze the distribution of described places, artifacts, and extents. 
