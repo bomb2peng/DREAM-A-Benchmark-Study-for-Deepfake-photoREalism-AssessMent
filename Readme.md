@@ -1,4 +1,4 @@
-## The DREAM deepfake assessment dataset 
+## The DREAM deepfake photorealism assessment dataset 
 The dataset can be applied [here](https://docs.google.com/forms/d/e/1FAIpQLSc7GdEJAhCkqLkl_wydfSdywSh_EL0cb27Uct7aJMyM-Y3oyw/viewform?usp=dialog). It is available for research purposes only, and please input your institutional email address to recieve the dataset link.
 ```
 Dataset structure
