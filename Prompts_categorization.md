@@ -108,5 +108,5 @@ D) CSV OUTPUT REQUIREMENTS (STRICT)
 4) If place or artifact has multiple labels, join them with semicolons ";" in a single cell.
 ```
 
-Finally, we run a simple python script to sum the total appearance of each category over the entire dataset based on the above attribution output.
+Finally, we run a simple python script to sum the total number of occurence of each category label over the entire dataset based on the above attribution output.
 
